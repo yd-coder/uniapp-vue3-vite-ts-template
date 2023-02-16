@@ -11,8 +11,8 @@ onHide(() => {
   console.log("App Hide");
 });
 </script>
-<style>
-body {
-  height: 100%;
-}
+<style lang="scss">
+	body {
+	  height: 100%;
+	}
 </style>

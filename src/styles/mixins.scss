@@ -1,0 +1,33 @@
+@mixin flex-center($fd: row) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: $fd;
+}
+
+@mixin ellipsis($rows: 1) {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: $rows;
+}
+
+@mixin color_primary($color){/*通过该函数设置字体颜色，后期方便统一管理；*/
+  color:$color;
+   
+  [data-theme="light"] & {
+    color:$light-color;
+  }
+   
+}
+
+@mixin background_primary($color){/*通过该函数设置字体颜色，后期方便统一管理；*/
+  background-color:$color;
+   
+  [data-theme="light"] & {
+    background-color:$light-background-color;
+  }
+   
+}
